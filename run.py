@@ -15,7 +15,11 @@ def hello():
             'infinitekeys': ['066E', '09'],
             'boomerang': ['0674', '01'],
             'infinitehitpoints': ['066f', 'FF'],
-            #'changeTrack' : ['0600', '80', '40', '20', '10', '01']
+            'changeTrack1' : ['0600', '80'],
+            'changeTrack2' : ['0600', '40'],
+            'changeTrack3' : ['0600', '20'],
+            'changeTrack4' : ['0600', '10'],
+            'changeTrack5' : ['0600', '01'],
         }
 
         msg = request.form['Body'].lower().split()
@@ -27,7 +31,7 @@ def hello():
                        "To start rom hacking, activate cheats with\n" 
                        "cheat <command>\n"
                        "cheats list: magicSword, invincible, infiniteRupees"
-                       "boomerang, infiniteKeys, infiniteHitPoints."
+                       ", boomerang, infiniteKeys, infiniteHitPoints. "
                        "To input values into hex memory addresses, use\n"
                        "hack <address> <value>\n"
             )
