@@ -11,7 +11,7 @@ def hello():
     print request.form['Body']
     print request.form['From']
 
-    with open("msgs.txt", "a+") as f:
+    with open("input.txt", "w") as f:
         f.write(request.form['From'] + ":" + request.form['Body']+"\n")
     #return str(resp)
     return 'recieved'
