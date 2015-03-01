@@ -15,11 +15,11 @@ def hello():
             'infinitekeys': ['066E', '09'],
             'boomerang': ['0674', '01'],
             'infinitehitpoints': ['066f', 'FF'],
-            'changeTrack1' : ['0600', '80'],
-            'changeTrack2' : ['0600', '40'],
-            'changeTrack3' : ['0600', '20'],
-            'changeTrack4' : ['0600', '10'],
-            'changeTrack5' : ['0600', '01'],
+            'changetrack1' : ['0600', '80'],
+            'changetrack2' : ['0600', '40'],
+            'changetrack3' : ['0600', '20'],
+            'changetrack4' : ['0600', '10'],
+            'changetrack5' : ['0600', '01'],
         }
 
         msg = request.form['Body'].lower().split()
