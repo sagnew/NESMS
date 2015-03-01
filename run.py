@@ -9,12 +9,12 @@ def hello():
         reply = 'received!'
         resp = twilio.twiml.Response()
         command_list = {
-            'magicSword': ['0657', '03'],
+            'magicsword': ['0657', '03'],
             'invincible': ['04f0', '04'],
-            'infiniteRupees': ['066d', 'ff'],
-            'infiniteKeys': ['066E', '09'],
+            'infiniterupees': ['066d', 'ff'],
+            'infinitekeys': ['066E', '09'],
             'boomerang': ['0674', '01'],
-            'infiniteHitPoints': ['066f', 'FF'],
+            'infinitehitpoints': ['066f', 'FF'],
             #'changeTrack' : ['0600', '80', '40', '20', '10', '01']
         }
 
