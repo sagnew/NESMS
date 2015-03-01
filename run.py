@@ -33,7 +33,8 @@ def hello():
                        "cheats list: magicSword, invincible, infiniteRupees"
                        ", boomerang, infiniteKeys, infiniteHitPoints. "
                        "To input values into hex memory addresses, use\n"
-                       "hack <address> <value>\n"
+                       "hack <4_digit_address> <2_digit_value>\n"
+                       "To chat, just type in whatever"
             )
         elif 'cheat' in msg[0] and len(msg) is 2:   #cheat address value
             cheat_address = command_list.get(msg[1])
