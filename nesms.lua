@@ -20,7 +20,7 @@ end;
 function handle_input ()
     local address = tonumber(read_file("address.txt"), 16);
     local value = tonumber(read_file("value.txt"), 16);
-    local speed = tonumber(read_file("speed.txt"), 16);
+    local speed = read_file("speed.txt");
 
     if(address ~= "None" and address ~= nil and value ~= nil) then
         memory.writebyte(address, value);

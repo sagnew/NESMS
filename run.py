@@ -28,7 +28,7 @@ def hello():
         address, value, speed = "None", "None", "None"
         if 'nesms' in msg[0]:
             reply = ("Welcome to NESMS!\n"
-                       "To start rom hacking, activate cheats with\n" 
+                       "To start rom hacking, activate cheats with\n"
                        "cheat <command>\n"
                        "cheats list: magicSword, invincible, infiniteRupees"
                        ", boomerang, infiniteKeys, infiniteHitPoints. "
@@ -47,7 +47,7 @@ def hello():
             else:
                 address = cheat_address[0]
                 value = cheat_value[1]
-            
+
         elif 'hack' in msg[0] and len(msg) is 3:
             address = msg[1]
             value = msg[2]
@@ -59,7 +59,7 @@ def hello():
 
         with open("address.txt", "w") as f:
             f.write(address + "\n")
-        
+
         with open("value.txt", "w") as f:
             f.write(value + "\n")
 
