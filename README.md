@@ -1,2 +1,2 @@
 # NESMS
-An FCEUX NES emulator extension that allows you to receive SMS text messages through while you are playing NES games, without stopping the game!
+A FCEUX NES emulator extension that receives SMS messages while you are playing a game, and allows the senders to manipulate the memory in real time. Text our Twilio number a memory address and a hex value to alter the game in real time as the user plays the game. This allows you to enter cheat codes to help the player out, or even to corrupt the game's memory. We hooked NES games up to the internet to allow for receive SMS messages.
