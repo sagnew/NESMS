@@ -25,7 +25,7 @@ def hello():
         msg = request.form['Body'].lower().split()
         print request.form['From']
         print msg
-        address, value = "None", "None"
+        address, value, speed = "None", "None", "None"
         if 'nesms' in msg[0]:
             reply = ("Welcome to NESMS!\n"
                        "To start rom hacking, activate cheats with\n" 
@@ -51,12 +51,20 @@ def hello():
         elif 'hack' in msg[0] and len(msg) is 3:
             address = msg[1]
             value = msg[2]
+        elif 'speed' in msg[0] and len(msg) is 2:
+            if msg[1] in 'normal' or msg[2] in 'turbo':
+                speed = msg[1]
+
+
 
         with open("address.txt", "w") as f:
             f.write(address + "\n")
         
         with open("value.txt", "w") as f:
             f.write(value + "\n")
+
+        with open("speed.txt", "w") as f:
+            f.write(speed + "\n")
 
         with open("input.txt", "w") as f:
             f.write(request.form['From'] + ":" + request.form['Body']+"\n")
