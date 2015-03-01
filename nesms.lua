@@ -30,7 +30,7 @@ while (true) do
 
     if(input_content ~= nil) then
         msg = input_content
-        gui.text(0, 50, msg);
+        emu.message(msg);
     end;
 
     if(msg ~= prev) then
