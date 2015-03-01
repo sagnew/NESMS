@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/", methods=['GET', 'POST'])
 def hello():
     if request.method == 'POST':
-        reply = 'received!'
+        reply = 'command received'
         resp = twilio.twiml.Response()
         command_list = {
             'magicsword': ['0657', '03'],
@@ -26,8 +26,8 @@ def hello():
             reply = ("Welcome to NESMS!\n"
                        "To start rom hacking, activate cheats with\n" 
                        "cheat <command>\n"
-                       "cheats list: magicSword, invincible, infiniteRupees\n"
-                       "boomerang, infiniteKeys, infiniteHitPoints\n"
+                       "cheats list: magicSword, invincible, infiniteRupees"
+                       "boomerang, infiniteKeys, infiniteHitPoints."
                        "To input values into hex memory addresses, use\n"
                        "hack <address> <value>\n"
             )
@@ -35,8 +35,8 @@ def hello():
             cheat_address = command_list.get(msg[1])
             cheat_value = command_list.get(msg[1])
             if not cheat_address:
-                reply = ("Sorry dude. Thats not a valid cheat\n"
-                          "Check out our cheat by sending nesms or \n"
+                reply = ("Sorry dude. Thats not a valid cheat."
+                          "Check out our cheat by sending nesms or"
                           "use the hack command to input your own values!"
                 )
             else:
