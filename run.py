@@ -23,7 +23,7 @@ def hello():
         print msg
         address, value = "None", "None"
         if 'nesms' in msg[0]:
-            message = ("Welcome to NESMS!\n"
+            reply = ("Welcome to NESMS!\n"
                        "To start rom hacking, activate cheats with\n" 
                        "cheat <command>\n"
                        "cheats list: magicSword, invincible, infiniteRupees\n"
