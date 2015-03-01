@@ -19,7 +19,7 @@ def hello():
             'changetrack2' : ['0600', '40'],
             'changetrack3' : ['0600', '20'],
             'changetrack4' : ['0600', '10'],
-            'changetrack5' : ['0600', '01'],
+            'changetrack5' : ['0600', '01'], #overworld
         }
 
         msg = request.form['Body'].lower().split()
