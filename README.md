@@ -29,4 +29,4 @@ Now you need to run `nesms.lua` in FCEUX.
 
 And watch as we can shoot a text message(in the form of a 4 digit hex address and a 2 digit hex value separated by a space such ass "0600 20") to make changes to our NES games in real time.
 
-![](https://raw.github.com/sagnew/NESMS/master/images/kill_mario.gif)
+![](https://raw.github.com/sagnew/NESMS/master/images/mario_dies.gif)
