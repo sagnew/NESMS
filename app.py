@@ -25,8 +25,13 @@ def sms_reply():
     # Create a regex for matching hex Strings.
     hex_pattern = re.compile('^[0-9a-fA-F]+$')
 
+    # Check to see if the message is in the right format for Game Genie codes.
+    if len(message_body) == 6 or len(message_body) == 8:
+        # FCEUX will determine if the code is invalid by default.
+        with open('cheat.txt', 'w') as f:
+            f.write(message_body)
     # Make sure the message is in the right format.
-    if not len(message_list) == 2:
+    elif not len(message_list) == 2:
         message_response = error_message
     else:
         # The first word should be the hex address.
