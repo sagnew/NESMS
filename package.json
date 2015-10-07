@@ -1,0 +1,24 @@
+{
+  "name": "nesms",
+  "version": "1.0.0",
+  "description": "A FCEUX NES emulator extension that receives SMS messages while you are playing a game, and allows the senders to manipulate the memory in real time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagnew/NESMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagnew/NESMS/issues"
+  },
+  "homepage": "https://github.com/sagnew/NESMS#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "twilio": "^2.4.0"
+  }
+}
