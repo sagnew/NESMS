@@ -3,6 +3,9 @@ A FCEUX NES emulator extension that receives SMS messages while you are playing 
 
 Text your Twilio number a memory address and a hex value to alter whatever game you are playing in real time. This allows you to enter cheat codes to help the player out, or even to corrupt the game's memory.
 
+If you want an explanation of how to build this from scratch check out this blog post:
+https://www.twilio.com/blog/2015/08/romram-hacking-building-an-sms-powered-game-genie-with-lua-and-python.html
+
 ## How to use
 
 You will need to install the Twilio and Flask python modules and run our Flask app.
